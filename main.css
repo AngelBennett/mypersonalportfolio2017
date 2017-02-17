@@ -1,0 +1,60 @@
+body {
+    background: #EFF0EF no-repeat fixed center;
+    margin: 0;
+    padding: 0;
+}
+body h1{
+    text-shadow: 4px 4px 4px #DCDDDC;
+}
+.navsection {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    background-color: lavender;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 15px;
+}
+.container {
+    width:80%;
+    margin: 0 auto;
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 3px;
+}
+.navsection a{
+    color: purple;
+    text-decoration: none;
+    padding: 5px;
+}
+.mytitle{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url('img/oregoncoast.png');
+    margin: 20px auto;
+}
+.mytitle span {
+    text-align: center;
+    font-size: 63px;
+    color: #FFF;
+    padding-top: 74px;
+    display: block;
+}
+#homepage .homepagelink{
+    background-color: #D5F3CB;
+}
+.navlink:hover {
+    background-color: green;
+}
+
+a  {
+    align-items: center;
+}
+h1 {
+
+}
+ul {
+    list-style-type: none;
+}
+
