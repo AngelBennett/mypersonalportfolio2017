@@ -5,6 +5,7 @@
     <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
     <link href="main.css" type="text/css"  rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <style>
         div .container {
             width: 100%;
@@ -47,12 +48,13 @@
         }
         .navsection a{
             color: dimgray;
-            font-family: "Bitter", serif ;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 20px;
             text-decoration: none;
             padding: 5px;
         }
         .contact{
-            width: 100%;
+            width: 96%;
             height: 250px;
             background-size: cover;
             background-color: rgba(185,125,193,0.82);
@@ -61,6 +63,7 @@
         }
         .contact span {
             text-align: center;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 63px;
             color: dimgray;
             padding-top: 74px;
@@ -68,13 +71,26 @@
             text-decoration: none;
         }
         .formcontent{
-            width: 98%;
+            width: 96%;
+            height: 500px;
             background-color: rgba(157,114,165,0.92);
             padding: 10px;
+            margin-left: 18px;
             border-radius: 3px;
         }
         #navlink:hover {
            background-color: #d3d3d3;
+        }
+        .mybutton{
+            width: 60px;
+            height: 26px;
+            text-align: center;
+            background-color: #1e90ff;
+            padding: 4px 0 0 0;
+            border-radius: 8px;
+            border: 1px;
+            box-shadow: -3px 0 7px 0;
+
         }
         h1 {
             color: dimgray;
@@ -104,7 +120,7 @@
             <a href="index.html" id="navlink">Home</a>
             <a href="aboutme.html">About Me</a>
             <a href="myclassprojects.html">My Projects</a>
-            <a href="mycontactform.html">Contacts</a>
+            <a href="mycontactform.html">Contact</a>
             <a href="myresume.html">Resume</a>
             </div>
 
@@ -116,7 +132,7 @@
 
                 <form method="post">
                     <label for="name">Name: </label><input id="name" name="name" type="text"><br><br>
-                    <label for="email">email: </label><input id="email" type="text" name="email" placeholder="email"><br><br>
+                    <label for="email">email: </label><input id="email" type="text" name="email" placeholder="email"><br>
 
                     <ul>
                         <li><label for="male">male</label><input id="male" type="radio" name="male"></li>
@@ -129,10 +145,9 @@
                         <option value="3">Web Dev</option>
                         </select>
                     </ul>
+                    <input type="reset"><br><br>
                     <label for="text">About: </label><textarea id="text" cols="30" rows="5"></textarea><br>
-                    <input type="submit">
-                    <input type="reset">
-
+                    <div class="mybutton"><a href="#" class="myButton"></a>Submit</div>
                 </form>
             </div>
         </div>
